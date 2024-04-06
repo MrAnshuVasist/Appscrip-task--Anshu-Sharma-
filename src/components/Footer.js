@@ -3,6 +3,8 @@ import Logo from "../Assests/Logo.png";
 import usa from "../Assests/usa.png";
 import { FaSearch, FaShoppingBag, FaUser, FaHeart, FaDotCircle } from 'react-icons/fa';
 import { useState } from 'react';
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+
 
 function Footer() {
     const [show, setShow]=useState(false)
@@ -47,7 +49,7 @@ function Footer() {
                     <div className='space-y-6'>
                         <div className='flex justify-between pr-4'>
                             <h1 className='lg:text-3xl text-xl font-bold'>metta muse</h1>
-                            <p className='lg:hidden block' onClick={() => setShow(!show)}>=</p>
+                            <p className='lg:hidden block' onClick={() => setShow(!show)}><FaAngleDown/></p>
                         </div>
                         <ul className='space-y-3 lg:block hidden'>
                             <li>About Us</li>
@@ -77,7 +79,7 @@ function Footer() {
                     <div className='space-y-6'>
                     <div className='flex justify-between pr-4'>
                             <h1 className='lg:text-3xl text-xl font-bold'>QUICK LINKS</h1>
-                            <p className='lg:hidden block' onClick={() => setQuick(!quick)}>=</p>
+                            <p className='lg:hidden block' onClick={() => setQuick(!quick)}><FaAngleDown/></p>
                         </div>
                         <ul className='space-y-3 lg:block hidden'>
                             <li>About Us</li>
@@ -109,7 +111,7 @@ function Footer() {
                     <div className='space-y-6'>
                     <div className='flex justify-between'>
                             <h1 className='lg:text-3xl text-xl font-bold'>FOLLOW US</h1>
-                            <p className='lg:hidden block' onClick={() => setFollow(!follow)}>=</p>
+                            <p className='lg:hidden block' onClick={() => setFollow(!follow)}><FaAngleDown/></p>
                         </div>
                         <div className='lg:flex gap-2 hidden'>
                             <div className='w-12 h-12 rounded-full border-2 flex items-center justify-center'>

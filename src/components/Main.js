@@ -432,7 +432,8 @@ function Main() {
                   style={{}}
                 />
                 <h3 className="text-center">{product.title}</h3>
-                <p className="text-center">{product.category}</p>
+                <p className="text-center">{product.category}</p> <span></span>
+
               </div>
             ))}
           </div>
